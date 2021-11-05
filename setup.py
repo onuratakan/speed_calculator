@@ -1,46 +1,33 @@
 from setuptools import setup
 
 
-setup(name='get_crypto_price',
+setup(name='speed_calculator',
 version='0.1.0',
-description="""A library to getting crypto price.""",
+description="""A library to speed calculation of a function.""",
 long_description="""
-# Get Crypto Price
-A library to getting crypto price.
+# Speed Calculator
+A library to speed calculation of a function.
 # Install
 ```
-pip3 install get-crypto-price
+pip3 install speed-calculator
 ```
 # Using
-## In another script
 ```python
-from get_crypto_price import get
-# get(source = "bitstamp", pair = "btcusdt")
-print(get())
-```
-## In command line
-```console
-  -h, --help            show this help message and exit
-  -s SOURCE, --source SOURCE
-                        Source
-  -p PAIR, --pair PAIR  Pair
-```
-```console
-get_crypto_price
+from speed_calculator import calculate
+
+import time
+def a_function():
+    time.sleep(2)
+
+print(calculate(a_function))
 ```
 """,
 long_description_content_type='text/markdown',
-url='https://github.com/onuratakan/get_crypto_price',
+url='https://github.com/onuratakan/speed_calculator',
 author='Onur Atakan ULUSOY',
 author_email='atadogan06@gmail.com',
 license='MIT',
-packages=["get_crypto_price"],
+packages=["speed_calculator"],
 package_dir={'':'src'},
-install_requires=[
-    "requests==2.25.1"
-],
-entry_points = {
-    'console_scripts': ['get_crypto_price=get_crypto_price.get_crypto_price:get'],
-},
 python_requires=">= 3",
 zip_safe=False)

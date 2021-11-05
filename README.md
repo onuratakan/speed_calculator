@@ -1,23 +1,16 @@
-# Get Crypto Price
-A library to getting crypto price.
+# Speed Calculator
+A library to speed calculation of a function.
 # Install
 ```
-pip3 install get-crypto-price
+pip3 install speed-calculator
 ```
 # Using
-## In another script
 ```python
-from get_crypto_price import get
-# get(source = "bitstamp", pair = "btcusdt")
-print(get())
-```
-## In command line
-```console
-  -h, --help            show this help message and exit
-  -s SOURCE, --source SOURCE
-                        Source
-  -p PAIR, --pair PAIR  Pair
-```
-```console
-get_crypto_price
+from speed_calculator import calculate
+
+import time
+def a_function():
+    time.sleep(2)
+
+print(calculate(a_function))
 ```
