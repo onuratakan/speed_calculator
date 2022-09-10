@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(name='speed_calculator',
-version='0.1.1',
+version='0.2.0',
 description="""A library to speed calculation of a function.""",
 long_description="""
 # Speed Calculator
