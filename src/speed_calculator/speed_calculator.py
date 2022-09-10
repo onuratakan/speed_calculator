@@ -1,8 +1,8 @@
 import time
 
-def calculate(function, result=False):
+def calculate(function, *args, result=False):
     start_time = time.time()
-    result = function()
+    result = function(args)
     end_time = time.time()
     the_return = end_time - start_time
     if result:
