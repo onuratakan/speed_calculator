@@ -1,7 +1,10 @@
 import time
 
-def calculate(function):
+def calculate(function, result=False):
     start_time = time.time()
-    function()
+    result = function()
     end_time = time.time()
-    return end_time - start_time
+    the_return = end_time - start_time
+    if result:
+        return the_return, result
+    return the_return
